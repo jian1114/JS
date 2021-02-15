@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet", href="index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Song+Myung&display=swap" rel="stylesheet">
+        <script src="calender.js"></script>
+        <title>
+        TO DO LIST
+        </title>
+    </head>
+    <body>
+        <div class="title">TO DO LIST</div>
+        <!--시계-->
+        <div class="js-clock">
+            <h1 class="clock">00:00</h1>
+        </div>
+        <!--시계-->
+        
+        
+        
+        <!--달력-->
+        <h3 align="center"></h3>
+        <table id="calendar" border="3" align="center" style="border-color: black">
+            <tr>
+                <td>
+                    <label onclick="prevCalendar()">
+                    <
+                    </label>
+                </td>
+                <td id="row1" colspan="5" >yyyy년 m월</td>
+                <td>
+                    <label onclick="nextCalendar()">
+                    >
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="column"><font color = "red">SUN</font></td>
+                <td class="column">MON</td>
+                <td class="column">TUE</td>
+                <td class="column">WED</td>
+                <td class="column">THU</td>
+                <td class="column">FRI</td>
+                <td class="column"><font color ="blue">SAT</font></td>
+            </tr> 
+        </table>
+        <!--달력-->
+        
+        <button class="reset">Reset</button>
+        
+        
+        
+        <div id="grid">
+            <!--이름-->
+            <div id="grid-name">
+                <h3 class="name">What's your name?</h3>
+                <form class="js-form form">
+                    <input id="name" type="text" placeholder="Name" />
+                </form>
+            </div>
+            <!--이름-->
+
+
+            <!--toDO-->
+            <div id="grid-toDo">
+                <h3 class="toDo">What are you doing today?</h3>
+                <h3 class="js-greetings greetings">
+                </h3>
+
+                <form class="js-toDoForm">
+                    <input id="toDo" type="text" placeholder="Write a to do">
+                </form>
+
+                <div class="js-toDoList">
+                </div>
+            </div>
+            <!--toDO-->
+        </div>
+        
+        
+        <script language="javascript" type="text/javascript">
+            buildCalendar();//
+        </script>
+        <script src="todo.js"></script>
+        <script src="greeting.js"></script>
+        <script src="clock.js"></script>
+        
+        
+        
+    
+    </body>
+</html>
+

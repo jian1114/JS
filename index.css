@@ -91,6 +91,8 @@ body {
 
 .js-toDoList {
     cursor: pointer;
+    padding: 0.5rem;
+    margin-top: 10px;
     font-family: 'Song Myung', serif;
     position: relative;
     top: 530px;
